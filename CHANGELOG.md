@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Service discovery using DNS SRV records for external Application Server linking.
 - Functionality to set end device attributes in the Console.
 - Event description tooltip to events in the Console.
+- Functionality to allow admin users to list all applications and gateways in the Console.
 
 ### Changed
 
