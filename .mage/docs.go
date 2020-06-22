@@ -20,7 +20,6 @@ import (
 	"net/http"
 	"net/url"
 	"os"
-	"path"
 	"path/filepath"
 	"text/template"
 
@@ -115,8 +114,7 @@ func (d Docs) Build() (err error) {
 	if err != nil {
 		return err
 	}
-	url.Path = path.Join(url.Path, currentVersion)
-	destination := path.Join("public", currentVersion)
+	destination := "public"
 	defer func() {
 		genErr := d.generateRedirect()
 		if err == nil {
